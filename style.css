@@ -1,0 +1,125 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background: #0f62fe;
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.time {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+input {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #0f62fe;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #0039cb;
+  box-shadow: 0 0 5px #0039cb;
+}
+.summary {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  width: 330px;
+  margin: 0 auto 20px;
+  font-weight: 600;
+}
+.chart-container {
+  width: 400px;
+  margin: 0 auto 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.stock-card {
+  background: linear-gradient(to bottom right, #ffffff, #f8f9fb);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 260px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.stock-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.stock-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f62fe;
+}
+.change {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.sentiment {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 120px;
+}
+.positive {
+  background: #d4f8e8;
+  color: #0b8a2f;
+}
+.negative {
+  background: #fde7e9;
+  color: #c1121f;
+}
+.neutral {
+  background: #fff3cd;
+  color: #856404;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  background: #f1f1f1;
+}
+@media (max-width: 600px) {
+  .stock-card { width: 90%; }
+  input { width: 90%; }
+  .chart-container { width: 90%; }
+}

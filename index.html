@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Stock Market Sentiment Analyzer</title>
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0b3c6c2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    Real-Time Stock Market Sentiment Analyzer
+    <div class="time" id="currentTime"></div>
+  </header>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="    Search by stock name...">
+  </div>
+
+  <div class="summary" id="market-summary">
+    Overall Market Sentiment: <span id="overall-sentiment">Positive</span>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="sentimentChart"></canvas>
+  </div>
+
+  <div class="container" id="stocks">
+    <div class="stock-card" id="TCS">
+      <div class="stock-name">TCS</div>
+      <div class="price">₹3,865</div>
+      <div class="change">+1.25%</div>
+      <div class="sentiment positive">Positive</div>
+    </div>
+
+    <div class="stock-card" id="INFY">
+      <div class="stock-name">INFY</div>
+      <div class="price">₹1,565</div>
+      <div class="change">+0.75%</div>
+      <div class="sentiment positive">Positive</div>
+    </div>
+
+    <div class="stock-card" id="RELIANCE">
+      <div class="stock-name">RELIANCE</div>
+      <div class="price">₹2,785</div>
+      <div class="change">-0.42%</div>
+      <div class="sentiment neutral">Neutral</div>
+    </div>
+
+    <div class="stock-card" id="HDFC">
+      <div class="stock-name">HDFC</div>
+      <div class="price">₹1,712</div>
+      <div class="change">+0.32%</div>
+      <div class="sentiment positive">Positive</div>
+    </div>
+
+    <div class="stock-card" id="WIPRO">
+      <div class="stock-name">WIPRO</div>
+      <div class="price">₹466</div>
+      <div class="change">-0.18%</div>
+      <div class="sentiment neutral">Neutral</div>
+    </div>
+
+    <div class="stock-card" id="HCL">
+      <div class="stock-name">HCL</div>
+      <div class="price">₹1,421</div>
+      <div class="change">+0.89%</div>
+      <div class="sentiment positive">Positive</div>
+    </div>
+
+    <div class="stock-card" id="ICICI">
+      <div class="stock-name">ICICI</div>
+      <div class="price">₹992</div>
+      <div class="change">-1.12%</div>
+      <div class="sentiment negative">Negative</div>
+    </div>
+
+    <div class="stock-card" id="SBIN">
+      <div class="stock-name">SBIN</div>
+      <div class="price">₹682</div>
+      <div class="change">+0.58%</div>
+      <div class="sentiment positive">Positive</div>
+    </div>
+  </div>
+
+  <footer>© 2025 Nan Mudhalvan | IBM-FE Project</footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
